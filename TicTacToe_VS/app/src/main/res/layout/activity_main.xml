@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2ee6d"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_view_ttt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:text="TIC TAC TOE"/>
+
+    <TextView
+        android:id="@+id/text_view_player_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="start"
+        android:textColor="@color/black"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/text_view_player_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="start"
+        android:textColor="@color/black"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_00"
+                style="@style/ButtonLayout"
+                android:layout_marginRight="10dp">
+            </Button>
+
+            <Button
+                android:id="@+id/button_01"
+                style="@style/ButtonLayout"
+                android:layout_marginRight="10dp">
+            </Button>
+            <Button
+                android:id="@+id/button_02"
+                style="@style/ButtonLayout">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_10"
+                style="@style/ButtonLayout"
+                android:layout_marginRight="10dp">
+            </Button>
+
+            <Button
+                android:id="@+id/button_11"
+                style="@style/ButtonLayout"
+                android:layout_marginRight="10dp">
+            </Button>
+            <Button
+                android:id="@+id/button_12"
+                style="@style/ButtonLayout">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_20"
+                style="@style/ButtonLayout"
+                android:layout_marginRight="10dp">
+            </Button>
+
+            <Button
+                android:id="@+id/button_21"
+                style="@style/ButtonLayout"
+                android:layout_marginRight="10dp">
+            </Button>
+            <Button
+                android:id="@+id/button_22"
+                style="@style/ButtonLayout">
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/button_resetBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#0d2678"
+            android:gravity="start"
+            android:text="RESET GAME"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </Button>
+
+        <Button
+            android:id="@+id/button_resetScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#0d2678"
+            android:gravity="end"
+            android:text="RESET SCORE"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+</LinearLayout>
